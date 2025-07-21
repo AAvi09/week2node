@@ -17,7 +17,10 @@ function main() {
           console.error(`Error reading file: ${err.message}`);
           return;
         }
-        const words = data.split(/\s+/).filter((word) => word.length > 0);
+        const words = 0;
+        if (data) {
+          words = data.split(/\s+/).filter((word) => word.length > 0);
+        }
         console.log(`The file contains ${words.length} words.`);
       });
     });

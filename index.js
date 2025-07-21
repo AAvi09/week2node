@@ -1,6 +1,6 @@
 const fs = require("fs");
-const { command } = require("commander");
-const program = new command();
+const { Command } = require("commander");
+const program = new Command();
 
 function main() {
   program
